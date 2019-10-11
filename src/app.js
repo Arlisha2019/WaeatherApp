@@ -5,8 +5,12 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
+const DARK_SKY_KEY = require('../apiKeys')
+const MAPBOX_KEY = require('../apiKeys');
+
 const app = express()
 const port = 3000
+const port2 = process.env.PORT || port
 
 //Define paths for express config 
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -83,5 +87,5 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(port, () => 
-    console.log(`Example app listening on port ${port}!`))
+app.listen(port2, () => 
+    console.log(`Example app listening on port ${port2}!`))
