@@ -5,9 +5,6 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
-const DARK_SKY_KEY = require('../apiKeys')
-const MAPBOX_KEY = require('../apiKeys');
-
 const app = express()
 const port = 3000
 const port2 = process.env.PORT || port

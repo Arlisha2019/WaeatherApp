@@ -1,4 +1,4 @@
-const MAPBOX_KEY = require('../../apiKeys');
+
 
 const request = require('request')
 
