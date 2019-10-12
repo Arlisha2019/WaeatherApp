@@ -4,8 +4,6 @@ const messageOne = document.getElementById('message-1')
 const messageTwo = document.getElementById('message-2')
 
 
-// messageOne.textContent = 'From JavaScript'
-
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
@@ -25,8 +23,7 @@ weatherForm.addEventListener('submit', (e) => {
             messageOne.textContent = data.location
             messageTwo.textContent = data.forecast
         
-            console.log('http://localhost:3000/weather?address=' + location)
-            console.log(response)
+
          }
       })
    })

@@ -1,5 +1,5 @@
 
-const DARK_SKY_KEY = require('../../apiKeys')
+
 
 const request = require('request')
 
